@@ -1,0 +1,1051 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 980px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    height: 70px;
+    background-color: #242424;
+}
+
+li {
+    list-style: none;
+}
+
+.header ul li .logo {
+    height: 70px;
+    width: 157px;
+    padding: 0 20px 0 0;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li>a {
+    display: block;
+    height: 70px;
+    padding: 0 19px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+.header ul li .logo {
+    margin-left: 155px;
+    background: url(images/topbar.png) no-repeat;
+    background-position: 0 0;
+}
+
+.header ul li .logo .a1 {
+    display: block;
+    text-indent: -9999px;
+    width: 157px;
+    padding-right: 20px;
+}
+
+.header ul li>a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.header .search {
+    float: left;
+    margin: 17px 5px;
+}
+
+.header .search input {
+    width: 158px;
+    height: 32px;
+    color: #bfbfbf;
+    font-size: 12px;
+    text-align: center;
+    border-width: 1px;
+    border-color: #FFF;
+    border-radius: 16px;
+}
+
+.header button {
+    float: left;
+    margin: 17px 5px;
+}
+
+.header button {
+    width: 90px;
+    height: 32px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 12px;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: #ccc;
+}
+
+.login {
+    float: left;
+    height: 70px;
+    width: 30px;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 12px;
+    background-color: #242424;
+    border: none;
+}
+
+.login a {
+    text-decoration: none;
+    color: #787878;
+}
+
+.login:hover a {
+    color: #ccc;
+}
+
+.login a:hover {
+    color: #787878;
+}
+
+.nav {
+    height: 35px;
+    line-height: 35px;
+    background-color: #c20c0c;
+    box-sizing: border-box;
+    border-bottom: 1px solid #a40011;
+}
+
+.nav1 {
+    box-sizing: border-box;
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 191px;
+}
+
+.nav1 .list {
+    display: flex;
+}
+
+.nav1 .list li {
+    float: left;
+}
+
+.nav1 .list li .item {
+    display: block;
+    height: 35px;
+    line-height: 30px;
+}
+
+.nav1 .list li .item span {
+    display: inline-block;
+    padding: 0px 13px;
+    margin: 7px 17px;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 21px;
+    border-radius: 20px;
+}
+
+.nav1 .list li .item:hover span,
+.nav1 .list li .item.active span {
+    background-color: #a40011;
+}
+
+/* 轮播图 */
+.banner {
+    height: 285px;
+    background: url(images/插图1bg.jpg) center center /6000px;
+}
+
+/* 982-730=252 */
+.banner .area .left .img-banner {
+    overflow: hidden;
+}
+
+.banner .area {
+    position: relative;
+    width: 982px;
+    height: 285px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.banner .area .left {
+    position: relative;
+    width: 730px;
+    height: 285px;
+}
+
+.banner .area .left .img-banner li {
+    position: relative;
+    display: flex;
+    width: 730px;
+    height: 285px;
+}
+
+.banner .area .left .img-banner .item img {
+    height: 285px;
+    vertical-align: top;
+}
+
+/* 轮播图的点 */
+
+.banner .area .left .dot {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    bottom: 5px;
+    display: flex;
+}
+
+.banner .area .left .dot .item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    background: url(images/banner.png) 3px -343px;
+}
+
+.banner .area .left .dot .item.active,
+.banner .area .left .dot .item:hover {
+    background-position: -16px -343px;
+}
+
+/* 轮播图右侧 */
+.banner .area .right {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+    width: 254px;
+    background: url(images/download.png);
+}
+
+.banner .area .right a {
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    text-indent: -9999px;
+}
+
+.banner .area .right a:hover {
+    background: url(images/download.png) 0 -290px;
+}
+
+.banner .area .right p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+/* 两个控制箭头 */
+.banner .area .total {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 37px;
+    height: 63px;
+    background: url(images/banner.png);
+}
+
+.banner .area .arrow1 {
+    left: -68px;
+    background-position: 0 -360px;
+}
+
+.banner .area .arrow1:hover {
+    background-position: 0 -430px;
+}
+
+.banner .area .arrow2 {
+    right: -68px;
+    background-position: 0 -508px;
+}
+
+.banner .area .arrow2:hover {
+    background-position: 0 -578px;
+}
+
+/* 内容区域 */
+.back {
+    background-color: #f5f5f5;
+}
+
+.back .content {
+    display: flex;
+    justify-content: space-between;
+    height: 1471px;
+    border: #d3d3d3 1px solid;
+    border-width: 0 1px;
+    background-image: url(images/wrap1.png);
+}
+
+/* 左边去掉1个边框宽729，右边去掉2个边框宽250 */
+/* 左边 */
+.zuo {
+    /* float: left; */
+    width: 729px;
+}
+
+/* 热门推荐标题 */
+.title {
+    width: 645px;
+    height: 35px;
+    margin: 20px 20px 0 20px;
+    padding: 0 10px 0 34px;
+    background: url(images/index.png) -225px -156px no-repeat;
+    background-color: #fff;
+    border-bottom: 2px solid #c10d0c;
+}
+
+.title .name {
+    float: left;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+}
+
+.title .more {
+    float: right;
+    color: #666;
+    font-size: 12px;
+    margin: 9px 0 0 0;
+    padding: 0 16px 0 0;
+    background: url(images/index.png) 26px -236.5px no-repeat;
+}
+
+.zuo .hot .title .tab {
+    float: left;
+    height: 15.5px;
+    line-height: 15.5px;
+    margin: 7px 0 0 20px;
+}
+
+.zuo .hot .title .tab span {
+    font-size: 12px;
+    color: #ccc;
+    margin: 0 10px;
+}
+
+.zuo .hot .title .tab a {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 热门推荐歌曲 */
+.hotMusic {
+    margin: 21px 0 0 -21px;
+}
+
+.hotMusic .hot1 {
+    position: relative;
+    display: block;
+    width: 140px;
+    height: 140px;
+}
+
+.hotMusic .hot1>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+}
+
+.hotMusic .hot1 .buttom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    background: url(images/coverall.png) 0 -537px no-repeat;
+    color: #ccc;
+}
+
+.buttom .earpods {
+    float: left;
+    width: 14px;
+    height: 11px;
+    margin: 9px 5px 9px 10px;
+    background: url(images/iconall.png) 0 -24px no-repeat;
+}
+
+.buttom .number {
+    float: left;
+    font-size: 12px;
+    color: #ccc;
+    margin: 7px 0 0 0;
+}
+
+.desc {
+    margin: 8px 0 3px;
+    font-size: 14px;
+}
+
+/* 所有的灰色小播放键都是pause1 */
+.pause1 {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 16px;
+    height: 17px;
+    background: url(images/iconall.png) 0 0 no-repeat;
+}
+
+.pause1:hover {
+    background: url(images/iconall.png) 0 -60px no-repeat;
+}
+
+.hotMusic .desc:hover,
+.zuo .hot .title .more:hover,
+.zuo .hot .title .tab a:hover {
+    text-decoration: underline;
+}
+
+.hotMusic li {
+    float: left;
+    width: 140px;
+    height: 204px;
+    padding: 0 0 30px 42px;
+}
+
+.blank {
+    float: left;
+    width: 689px;
+    margin: 0 0 35px;
+}
+
+/* 新碟上架 */
+.new {
+    float: left;
+}
+
+.newMusic {
+    position: relative;
+    height: 186px;
+    margin: 20px 20px 37px 20px;
+    border: 1px solid #d3d3d3;
+    background: #f5f5f5;
+}
+
+.newMusic .leftBtn {
+    position: absolute;
+    left: 4px;
+    top: 71px;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(images/index.png) -260px -75px no-repeat;
+}
+
+.newMusic .rightBtn {
+    position: absolute;
+    right: 4px;
+    top: 71px;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(images/index.png) -300px -75px no-repeat;
+}
+
+/* 新碟上架轮播图 */
+.newMusic .newRoll {
+    float: left;
+    width: 645px;
+    height: 180px;
+    margin-left: 17px;
+    overflow: hidden;
+}
+
+.newRoll .roll {
+    position: absolute;
+    top: 0;
+    width: 645px;
+    margin: 28px 0 0 0;
+}
+
+.newRoll .roll li {
+    float: left;
+    display: inline;
+    width: 118px;
+    height: 150px;
+    margin-left: 11px;
+    background: url(images/index.png) -260px 100px no-repeat;
+}
+
+.newRoll .roll li .singer {
+    font-size: 12px;
+    color: #666;
+}
+
+.newRoll .roll li .desc {
+    color: #000;
+    font-size: 12px;
+}
+
+.newRoll .roll li .desc:hover,
+.newRoll .roll li .singer:hover {
+    text-decoration: underline;
+}
+
+.newRoll .roll .roll-cover {
+    position: relative;
+}
+
+.newRoll .roll .roll-cover .tit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 118px;
+    height: 100px;
+    background: url(images/coverall.png) 0 -570px no-repeat;
+}
+
+.pause2 {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(images/iconall.png) 0 -85px no-repeat;
+    display: none;
+}
+
+.newRoll .roll .roll-cover:hover .pause2 {
+    display: block;
+}
+
+/* 磅单 */
+.all-list {
+    float: left;
+}
+
+.list-body {
+    width: 690px;
+    height: 472px;
+    margin-top: 20px;
+    padding-left: 1px;
+    margin: 20px 20px 0 20px;
+    background: url(images/index_bill.png) no-repeat;
+}
+
+.sublist {
+    float: left;
+    width: 230px;
+}
+
+/* 榜单上部 */
+.sublist .top {
+    position: relative;
+    height: 80px;
+    padding: 20px 0 0 20px;
+}
+
+.sublist .top img {
+    width: 80px;
+    height: 80px;
+}
+
+.sublist .top a.mask {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+    background: url(images/coverall.png) -145px -57px;
+}
+
+.sublist .top .tit1 {
+    position: absolute;
+    top: 25px;
+    right: 78px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.sublist .top .play {
+    position: absolute;
+    left: 110px;
+    top: 55px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(images/index.png) -267px -205px;
+}
+
+.sublist .top .play:hover {
+    background: url(images/index.png) -267px -235px;
+}
+
+.sublist .top .collect {
+    position: absolute;
+    top: 55px;
+    left: 142px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(images/index.png) -300px -205px;
+}
+
+.sublist .top .collect:hover {
+    background: url(images/index.png) -300px -235px;
+}
+
+/* 榜单内容 */
+.sublist dd li {
+    position: relative;
+    display: block;
+    width: 230px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 0;
+}
+
+.sublist dd .tit3 {
+    margin-top: 20px;
+}
+
+.sublist dd li span {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 35px;
+    color: #666;
+    line-height: 32px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.sublist dd .songlist .tit2 span {
+    color: #c10d0c;
+}
+
+.sublist dd .songlist li a {
+    float: left;
+    width: 170px;
+    color: #000;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.sublist dd .songlist li .li-hover {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    width: 78px;
+    height: 20px;
+    display: none;
+}
+
+.sublist dd .songlist li a:hover {
+    text-decoration: underline;
+}
+
+.sublist dd .songlist li:hover a {
+    width: 96px;
+}
+
+.sublist dd .songlist li:hover .li-hover {
+    display: block;
+}
+
+.songlist li .li-hover a {
+    float: left;
+    width: 17px !important;
+    height: 17px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.songlist li .li-hover .play1 {
+    background: url(images/index.png) -267px -268px no-repeat;
+}
+
+.songlist li .li-hover .play1:hover {
+    background: url(images/index.png) -267px -288px;
+}
+
+.songlist li .li-hover .add {
+    background: url(images/l3.png) 0 -698px no-repeat;
+}
+
+.songlist li .li-hover .add:hover {
+    background: url(images/l3.png) -22px -698px;
+}
+
+.songlist li .li-hover .collect1 {
+    margin-right: 0;
+    background: url(images/index.png) -297px -268px no-repeat;
+}
+
+.songlist li .li-hover .collect1:hover {
+    background: url(images/index.png) -297px -288px;
+}
+
+.sublist dd .more {
+    position: relative;
+    width: 198px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 32px;
+}
+
+.sublist dd .more a {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #000;
+}
+
+.sublist dd .more a:hover {
+    text-decoration: underline;
+}
+
+/* 右边 */
+.you {
+    width: 250px;
+}
+
+.you .user-login {
+    width: 250px;
+    height: 126px;
+    background: url(images/index.png);
+}
+
+.you .user-login p {
+    width: 205px;
+    margin: 0 auto;
+    padding: 16px 0;
+    line-height: 22px;
+    font-size: 12px;
+    color: #666;
+}
+
+.you .user-login a {
+    display: block;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0 1px 0 #8a060b;
+    background: url(images/index.png) 0 -195px;
+}
+
+.you .singerWrap {
+    margin-top: 15px;
+}
+
+.you .singerWrap .singerTit {
+    width: 210px;
+    height: 23px;
+    margin: 0 23px;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.you .singerWrap .singerTit a {
+    float: right;
+    color: #666;
+    font-weight: 400;
+}
+
+.you .singerWrap .singerTit a:hover {
+    text-decoration: underline;
+}
+
+.singer-list {
+    margin: 6px 0 14px 22px;
+}
+
+.singer-list li {
+    margin-top: 14px;
+}
+
+.singer-content {
+    display: block;
+    width: 210px;
+    height: 62px;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.singer-content .head {
+    float: left;
+    width: 62px;
+    height: 62px;
+}
+
+.singer-content .singerName {
+    float: right;
+    width: 132px;
+    height: 62px;
+    padding-left: 14px;
+    border: 1px solid #e9e9e9;
+}
+
+.singer-content .singerName span {
+    display: block;
+    margin: 8px 0 3px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.singer-content .singerName p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.singer-content:hover .singerName {
+    background-color: #f5f5f5;
+}
+
+.singer-btn {
+    display: block;
+    width: 205px;
+    height: 31px;
+    line-height: 31px;
+    color: #333;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding-right: 5px;
+    margin-left: 22px;
+    border-radius: 4px;
+    background: url(images/button2.png) right -100px;
+}
+
+.singer-btn i {
+    display: inline-block;
+    width: 170px;
+    padding: 0 15px 0 20px;
+    font-style: normal;
+    background: url(images/button2.png) 0 -59px;
+}
+
+/* 热门主播 */
+.hot-anchor {
+    margin-top: 30px;
+}
+
+.hot-anchor h3 {
+    /* position: relative; */
+    height: 23px;
+    margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #333;
+}
+
+.anchor-list {
+    margin: 20px 0 0 20px;
+}
+
+.anchor-list {
+    width: 210px;
+}
+
+.anchor-list li {
+    width: 210px;
+    height: 50px;
+}
+
+.anchor-list li>a {
+    float: left;
+    margin-right: 10px;
+}
+
+.anchor-name {
+    float: left;
+    width: 160px;
+    line-height: 21px;
+}
+
+.anchor-name p {
+    font-size: 12px;
+    color: #666;
+}
+
+.anchor-name p a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 12px;
+}
+
+.anchor-list li p a:hover {
+    text-decoration: underline;
+}
+
+/* 页面底部 */
+.buttom1 {
+    width: 100%;
+    height: 325px;
+    border-top: 1px solid #d3d3d3;
+    background-color: #f2f2f2;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+.content2 li {
+    width: 45px;
+    margin-left: 80px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.content2 .spc {
+    margin-left: 0;
+}
+
+.content2 li a {
+    display: block;
+    float: none;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.content2 li .logo1 {
+    background: url(images/foot_enter_new2.png) -170px -5px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo1:hover {
+    background: url(images/foot_enter_new2.png) -5px -115px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo2 {
+    background: url(images/foot_enter_new2.png) -5px -170px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo2:hover {
+    background: url(images/foot_enter_new2.png) -60px -170px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo3 {
+    background: url(images/foot_enter_new2.png) -5px -60px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo3:hover {
+    background: url(images/foot_enter_new2.png) -60px -5px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo4 {
+    background: url(images/xStudio.png) no-repeat;
+    background-size: 45px;
+}
+
+.content2 li .logo4:hover {
+    background: url(images/xStudioHover.png) no-repeat;
+    background-size: 45px;
+}
+
+.content2 li .logo5 {
+    background: url(images/foot_enter_new2.png) -60px -60px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo5:hover {
+    background: url(images/foot_enter_new2.png) -115px -5px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo7 {
+    background: url(images/cloudSong.png) no-repeat;
+    background-size: 45px;
+}
+
+.content2 li .logo7:hover {
+    background: url(images/cloudSongHover.png) no-repeat;
+    background-size: 45px;
+}
+
+.content2 li .logo6 {
+    background: url(images/foot_enter_new2.png) -115px -115px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo6:hover {
+    background: url(images/foot_enter_new2.png) -5px -5px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo8 {
+    background: url(images/foot_enter_new2.png) -170px -115px no-repeat;
+    background-size: 220px 220px;
+}
+
+.content2 li .logo8:hover {
+    background: url(images/foot_enter_new2.png) -60px -115px no-repeat;
+    background-size: 220px 220px;
+}
+
+
+.content2 li span {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 0 0 -27.5px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.copy {
+    padding-top: 60px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copy p,
+.copy p a {
+    color: #666;
+    font-size: 12px;
+}
+
+.copy .link1 span {
+    margin: 0 8px 0 8px;
+    color: #D9D9D9;
+}
+
+.copy a:hover {
+    text-decoration: underline;
+}
